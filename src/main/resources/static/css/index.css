@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.top-banner{
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1340px;
+  box-sizing: border-box;
+  width: 1340px;
+}
+
+.logo{
+  color: red;
+}
