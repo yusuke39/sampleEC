@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
 .wrapper{
   width: 100%;
   margin: 0 auto;
@@ -56,6 +59,7 @@
   font-size: 200%;
   color:#000;
   margin-top: 8px;
+  font-weight: bold;
 }
 
 .title-area-right{
@@ -69,7 +73,6 @@
 .header-over-button{
   font-size: 13px;
   font-style: normal;
-  font-weight: 200;
   display: inline-block;
   color: #0000;
   line-height: 22px;
@@ -89,4 +92,54 @@
 .shopping-cart{
   color: #000;
   font-size: 200%;
+}
+
+.menu-caetgory{
+  display: flex;
+}
+
+.menu-item{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.menu-label{
+  color: #000;
+}
+
+#header-serch-overlay{
+  height: 0;
+  margin-top: 10px;
+}
+
+.header-serch-overlay{
+  position: relative;
+  top: -106px;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 90%;
+}
+
+.header-overlay-content{
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header-serch{
+  width: 220px;
+  min-width: 200px;
+  position: relative;
+  left: 900px;
+  z-index: 999;
+}
+
+
+.serch{
+  width: 150px;
+  height: 20px;
+}
+
+.submit-button{
+  height: 25px;
+  width: 60px;
 }
