@@ -164,4 +164,22 @@ a{
 img{
   max-height: 150px;
   max-width: 150px;
+  padding-left: 10px;
+}
+
+.item-name{
+  font-size: 13px;
+  font-style: normal;
+  font-family: "MoMA Sans Regular", Arial, sans-serif;
+  font-weight: 200;
+  margin: 0,0,9px;
+  height: auto;
+  width: auto;
+  color: #999;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.item-price{
+  text-align: center;
 }
