@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ a{
 }
 
 
-/* ヘッダーのCSS */
+/* 繝倥ャ繝繝ｼ縺ｮCSS */
 .top-banner{
   display: block;
   margin: 0 auto;
@@ -148,7 +150,7 @@ a{
 }
 
 
-/* メインコンテンツのCSS */
+/* 繝｡繧､繝ｳ繧ｳ繝ｳ繝�繝ｳ繝�縺ｮCSS */
 .container{
   float: right;
 }
@@ -210,215 +212,21 @@ img{
   font-size: 20px;
 }
 
-th:src="@{/img/nhl.png}"
-th:href="@{/css/index.css}"*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-.wrapper{
-  width: 100%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-
-/* ヘッダーのCSS */
-.top-banner{
-  display: block;
-  margin: 0 auto;
-  padding: 0 30px;
-  max-width: 1340px;
-  box-sizing: border-box;
-  width: 1340px;
-}
-
-.navigation{
-  display: block;
-  margin: 0 auto;
-  padding: 0px;
-  min-width: 1400px;
-  color: #fff;
-  position: relative;
-  margin-top: 0;
-  z-index: 99;
-}
-
-.title-area{
-  height: 90px;
-  position: relative;
-  transition: all 0.3s;
-}
-
-.primary-logo{
-  display: inline-block;
-  height: 41px;
-  width: 399px;
-  padding: 0;
-  margin: 40px,0,0,0;
-  position: absolute;
-  left: 0;
-  z-index: 1000;
-}
-
-.primary-logo a {
-  display: block;
-  z-index: 1001;
-  text-decoration: none;
-}
-
-.logo{
-  font-size: 200%;
-  color:#000;
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-.title-area-right{
-  position: absolute;
-  margin-right: 150px;
-  margin-top: 15px;
-  right: 0px;
+.login-andregister{
   display: flex;
-}
-
-.header-over-button{
-  font-size: 13px;
-  font-style: normal;
-  display: inline-block;
-  color: #0000;
-  line-height: 22px;
-  height: 22px;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 0,0,0,10px;
-}
-
-.header-login-button{
-  color: #000;
-  font-size: 200%;
-  margin-right: 50px;
-  margin-top: 6px;
-}
-
-.shopping-cart{
-  color: #000;
-  font-size: 200%;
-}
-
-.menu-caetgory{
-  display: flex;
-}
-
-.menu-item{
-  margin-right: 20px;
-  font-size: 20px;
-}
-
-.menu-label{
-  color: #000;
-}
-
-#header-serch-overlay{
-  height: 0;
-  margin-top: 10px;
-}
-
-.header-serch-overlay{
-  position: relative;
-  top: -106px;
-  margin: 0 auto;
-  background-color: #fff;
-  width: 90%;
-}
-
-.header-overlay-content{
-  width: 1280px;
-  margin: 0 auto;
-}
-
-.header-serch{
-  width: 220px;
-  min-width: 200px;
-  position: relative;
-  left: 900px;
-  z-index: 999;
-}
-
-
-.serch{
-  width: 150px;
-  height: 20px;
-}
-
-.submit-button{
-  height: 25px;
-  width: 60px;
-}
-
-
-/* メインコンテンツのCSS */
-.container{
-  float: right;
-}
-
-.style-line{
-  width: 100%;
-}
-
-.style-item:nth-child(3n+1){
-  clear: both;
-}
-
-.style-item{
-  width: 33%;
-  float: left;
-  margin-bottom: 80px;
-  position: relative;
-  height: auto!important;
-  width: 10%;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-right: 200px;
-  margin-top: 60px;
-  position: relative;
-}
-
-img{
-  max-height: 150px;
-  max-width: 150px;
-}
-
-.item-name{
-  font-size: 13px;
-  font-style: normal;
-  font-family: "MoMA Sans Regular", Arial, sans-serif;
-  font-weight: 200;
-  margin: 0,0,9px;
-  height: auto;
-  width: auto;
-  color: #999;
   text-align: center;
-  line-height: 1.2;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
-.item-price{
-  text-align: center;
+.loginbox{
+  border: solid 2px #000;
+  padding: 30px;
 }
 
-
-.leftmenu{
-  width: 120px;
+.register-box{
   margin-left: 80px;
-  margin-top: 40px;
-  line-height: 40px;
-}
-
-.tree_menu{
-  color: #000;
-  font-size: 20px;
+  border: solid 2px #000;
+  padding: 30px;
 }
