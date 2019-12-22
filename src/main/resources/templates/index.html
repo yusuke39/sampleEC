@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org"
-	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,83 +11,7 @@
   <title>Store</title>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="top-banner">
-        <nav class="navigation">
-          <div class="title-area">
-            <div class="primary-logo">
-              <a href="#">
-                <p class="logo">Store</p>
-              </a>
-            </div>
-            <div class="title-area-right">
-              <a href="#" class="login-button">
-                <p ><i class="far fa-user header-over-button header-login-button"></i></p>
-              </a>
-              <a href="#">
-                <p><i class="fas fa-shopping-cart shopping-cart"></i></p>
-              </a>
-            </div>
-          </div>
-          <div class="header-menu">
-            <ul class="menu-caetgory">
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">新商品</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">ホーム</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">キッチン</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">ファッション</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">ブック</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">キッズ</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-label">キッチン</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-      <div id="header-serch-overlay">
-        <div class="header-serch-overlay">
-          <div class="header-overlay-content">
-            <div class="header-serch">
-              <form action="#" method="post" class="serch-form">
-                <input type="hidden">
-                <input type="text" name="serch" class="serch" id="serch">
-                <button type="submit" class="submit-button">
-                    <i class="fas fa-search"></i>検索
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div th:replace="header :: header"></div>
     <div class="container">
         <!-- <div class="navpath"></div>
         <div class="mainframe">

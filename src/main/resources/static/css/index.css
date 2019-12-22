@@ -63,7 +63,7 @@ a{
 .logo{
   font-size: 200%;
   color:#000;
-  margin-top: 8px;
+  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -205,6 +205,11 @@ img{
   margin-left: 80px;
   margin-top: 40px;
   line-height: 40px;
+}
+
+.category-block{
+	border: solid 2px #000;
+	width: 150px;
 }
 
 .tree_menu{
