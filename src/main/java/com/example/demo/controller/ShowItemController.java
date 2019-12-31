@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class ShowItemController {
 	
+	
 	/**
 	 * メイン画面を表示する.
 	 * 
@@ -21,5 +22,5 @@ public class ShowItemController {
 	public String login() {
 		return "login";
 	}
-
+	
 }

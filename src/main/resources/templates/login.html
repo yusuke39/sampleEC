@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org"
-	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
-	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,21 +24,24 @@
         </label><br>
         <label for="pass" class="password">パスワード:
           <input type="password" id="pass" class="password-input">
-        </label>
+        </label><br>
+        <input type="submit" class="button">
       </form>
     </div>
     <div class="register-box">
+    ＊初めてのご利用の方はこちらから
       <p class="logo">新規会員登録</p>
-      <form action="register" method="post" class="register">
+      <form th:action="@{register}" method="post" class="register">
         <label for="name-regi" class="name">ログインネーム:
-          <input id="name-regi" type="text" class="name-input">
+          <input name="name" id="name-regi" type="text" class="name-input">
         </label><br>
         <label for="email-regi" class="email">メールアドレス:
-          <input type="email" id="email-regi" class="email-input">
+          <input name="email" type="email" id="email-regi" class="email-input">
         </label><br>
         <label for="pass-regi" class="password">パスワード:
-          <input type="password" id="pass-regi" class="password-input">
-        </label>
+          <input name="password" type="password" id="pass-regi" class="password-input">
+        </label><br>
+        <input type="submit" class="button" value="登録">
       </form>
     </div>
   </div>
