@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.domain.Users;
 import com.example.demo.form.RegisterForm;
-import com.example.demo.repository.RegisterRepository;
+import com.example.demo.service.RegisterUserService;
 
 @Controller
 public class RegisteruserController {
@@ -16,7 +16,7 @@ public class RegisteruserController {
 	
 
 	@Autowired
-	private RegisterRepository register;
+	private RegisterUserService registerUserService;
 	
 	/**
 	 * 会員新規登録をする.
@@ -30,8 +30,8 @@ public class RegisteruserController {
 		user.setName(registerform.getName());
 		user.setEmail(registerform.getEmail());
 		user.setPassword(hashPassword(registerform.getPassword()));
-		register.UserRegister(user);
-		return "index";
+		registerUserService.insertUser(user);
+		return "RegisterResult";
 	}
 	
 	

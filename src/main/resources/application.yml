@@ -3,4 +3,8 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/sampleec
     username: postgres
-    password: postgres
+    password: postgres  
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

@@ -14,17 +14,19 @@
 
   <div class="login-andregister">
     <div class="loginbox">
+     <br>
       <p class="logo">ログイン</p>
-        <form action="login" method="post" class="rogin">
-        <label for="name" class="name">ログインネーム:
+        <form th:action="@{login}" method="post" class="rogin">
+<!--         <label for="name" class="name">ログインネーム:
           <input id="name" type="text" class="name-input">
-        </label><br>
+        </label><br> -->
         <label for="email" class="email">メールアドレス:
           <input type="email" id="email" class="email-input">
         </label><br>
         <label for="pass" class="password">パスワード:
           <input type="password" id="pass" class="password-input">
         </label><br>
+        <br>
         <input type="submit" class="button">
       </form>
     </div>
